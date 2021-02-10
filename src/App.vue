@@ -87,6 +87,50 @@
 
       <!-- end -->
 
+      <!-- DIV : AVANTAGES -->
+
+      <v-row
+        id="idAvantages"
+        no-gutters
+        align="center"
+        justify="center"
+        style="background-color: #ffffff; height: 100vh"
+      >
+        <v-container >
+          <v-row justify="center" align="center">
+            <v-row class="col-3 mx-2" align="end" style="height: 100%">
+              <CardAvantage
+                icon="mdi-magnify"
+                title="Des codes à débloquer"
+                content="
+                Progressez dans la ville en décryptant les codes qui vous
+                dévoileront de nouveaux indices.
+              "
+              />
+              <v-spacer style="min-height: 192px"></v-spacer>
+            </v-row>
+            <v-row class="col-3 mx-2" align="start" style="height: 100%">
+              <v-spacer style="min-height: 192px"></v-spacer>
+              <CardAvantage
+                icon="mdi-lightbulb-on"
+                title="Des énigmes à résoudre"
+                content="Avancez de site en site en triomphant des pièges tendus par l’histoire que vous vivez"
+              />
+            </v-row>
+            <v-row class="col-3 mx-2" align="end" style="height: 100%">
+              <CardAvantage
+                icon="mdi-magnify"
+                title="Des indices à trouver sur les lieux"
+                content="Tout au long de votre parcours, ayez l’oeil bien ouvert car des indices se cachent autour de vous"
+              />
+              <v-spacer style="min-height: 192px"></v-spacer>
+            </v-row>
+          </v-row>
+        </v-container>
+      </v-row>
+
+      <!-- end -->
+
       <!-- DIV : rien c'est pour le dev -->
 
       <div>
@@ -102,32 +146,17 @@
 </template>
 
 <script>
+import "./assets/css/css.css";
+
+import CardAvantage from "./components/CardAvantage";
+
 export default {
   name: "App",
 
-  components: {},
+  components: { CardAvantage },
 
   data: () => ({
     //
   }),
 };
 </script>
-
-<style >
-
-h2 {
-  /* font-size: 70px;
-  font-weight: 600; */
-}
-
-.custom-mainTitle {
-  /* font-family: Averta CY; */
-  font-size: 105px;
-  font-weight: 600;
-}
-.custom-mainBtnText {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-</style>
