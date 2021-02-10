@@ -5,57 +5,86 @@
     > -->
 
     <v-main>
-      <div id="illu" class="red" style="height: 100vh">
+      <!-- DIV : HERO  -->
+
+      <div id="idHero" style="height: 100vh">
         <v-row
-          id="menu"
-          class="green ma-0 pa-0"
+          id="idMenu"
+          class="ma-0 pa-0"
           justify="center"
           style="height: 5%"
         >
-          <v-row class="ma-0 pa-0 px-2 orange" align="center" justify="start">
+          <v-row class="ma-0 pa-0 px-2" align="center" justify="start">
             <span> Explor</span> <span class="indigo--text">'Area</span>
           </v-row>
           <v-row class="ma-0 pa-0 px-2" align="center" justify="end">
             <v-btn small text>A propos</v-btn>
             <v-btn small text>Contact</v-btn>
             <v-btn small fab color="white">
-              <v-icon color="indigo"> mdi-plus </v-icon>
+              <v-icon color="indigo"> mdi-magnify </v-icon>
             </v-btn>
           </v-row>
         </v-row>
 
         <v-row
-          id="content"
+          id="idHero-content"
           class="yellow ma-0 pa-0"
           align="center"
           justify="center"
           style="height: 95%"
         >
           <v-row>
-            <v-row class="col-12" justify="center">
-              <span>
-                Découvrez des lieux comme vous ne les avez jamais vus</span
+            <v-row class="col-12 mx-4" justify="start">
+              <span class="custom-mainTitle">
+                Découvrez les villes avec notre exploration game phygital</span
               >
             </v-row>
-            <v-row class="col-12" justify="center">
-              <v-btn color="indigo" dark rounded> Accès anticipé </v-btn>
+            <v-row class="col-12 mx-4" justify="start">
+              <v-btn class="custom-mainBtnText" color="indigo" dark rounded>
+                Télécharger l’application
+              </v-btn>
             </v-row>
           </v-row>
         </v-row>
       </div>
 
-      <v-container>
-        <v-skeleton-loader
-          type="list-item-avatar-three-line, image, article, image, article, image, article"
-        ></v-skeleton-loader>
-      </v-container>
+      <!-- end -->
+
+      <!-- DIV : WHAT IS IT  -->
+
+      <div
+        id="idWhatIsIt"
+        style="background-color: #5139ea; color: white; height: 100vh"
+      >
+        <v-container style="max-width: 830px">
+          <v-row class="ma-0 pa-0 text-center" align="center" justify="center">
+            <h2>
+              Duis velit laborum mollit exercitation qui exercitation ea quis
+              nulla laborum tempor id.
+            </h2>
+
+            <p>
+              Excepteur reprehenderit commodo non minim veniam occaecat. Sint
+              voluptate excepteur amet excepteur ullamco. Lorem eiusmod deserunt
+              ex cupidatat laboris ipsum cillum deserunt.
+            </p>
+            <v-img src="./assets/img/aie aie aie 1.png"> </v-img>
+          </v-row>
+        </v-container>
+      </div>
+
+      <!-- end -->
+
+      <!-- DIV : rien c'est pour le dev -->
+
       <div>
         var de dev lisez pas :
         <span class="red white--text px-2">
-        ({{$vuetify.breakpoint.name}})
-
+          ({{ $vuetify.breakpoint.name }})
         </span>
       </div>
+
+      <!-- end -->
     </v-main>
   </v-app>
 </template>
@@ -71,3 +100,15 @@ export default {
   }),
 };
 </script>
+
+<style >
+.custom-mainTitle {
+  /* font-family: Averta CY; */
+  font-size: 105px;
+  font-weight: 600;
+}
+.custom-mainBtnText {
+  font-size: 18px;
+  font-weight: 600;
+}
+</style>
