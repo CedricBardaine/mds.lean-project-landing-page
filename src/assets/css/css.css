@@ -1,0 +1,43 @@
+@font-face {
+  font-family: AvertaCY;
+  src: url("../fonts/AvertaCY-Regular.otf") format("opentype");
+}
+
+body {
+font-family: AvertaCY !important;
+font-size: 18px;
+}
+
+h2 {
+  font-family: AvertaCY !important;
+
+/* font-size: 70px;
+font-weight: 600; */
+}
+h3 {
+  font-family: AvertaCY !important;
+  font-size: 40px;
+}
+
+.custom-mainTitle {
+/* font-family: Averta CY; */
+font-size: 105px;
+font-weight: 600;
+}
+.custom-mainBtnText {
+font-size: 18px;
+font-weight: 600;
+}
+
+.custom-roundedIcon {
+  width: 114px !important;
+  height: 114px !important;
+  background: #EBE8FD !important;
+}
+.custom-roundedIcon:hover {
+  cursor: inherit;
+}
+.custom-roundedIcon  i {
+  font-size: 36px !important;
+
+}
