@@ -10,14 +10,13 @@
       <div id="idHero" style="height: 100vh">
         <v-row
           id="idMenu"
-          class="ma-0 pa-0"
-          justify="center"
+          no-gutters
           style="height: 5%"
         >
-          <v-row class="ma-0 pa-0 px-2" align="center" justify="start">
+          <v-row class="px-2" no-gutters align="center" justify="start">
             <span> Explor</span> <span class="indigo--text">'Area</span>
           </v-row>
-          <v-row class="ma-0 pa-0 px-2" align="center" justify="end">
+          <v-row class="px-2" no-gutters align="center" justify="end">
             <v-btn small text>A propos</v-btn>
             <v-btn small text>Contact</v-btn>
             <v-btn small fab color="white">
@@ -28,7 +27,8 @@
 
         <v-row
           id="idHero-content"
-          class="yellow ma-0 pa-0"
+          class="yellow "
+          no-gutters
           align="center"
           justify="center"
           style="height: 95%"
@@ -52,26 +52,26 @@
 
       <!-- DIV : WHAT IS IT  -->
 
-      <div
+      <v-row
         id="idWhatIsIt"
+        no-gutters
+        align="center"
+        justify="center"
         style="background-color: #5139ea; color: white; height: 100vh"
       >
-        <v-container style="max-width: 830px">
-          <v-row class="ma-0 pa-0 text-center" align="center" justify="center">
-            <h2>
-              Duis velit laborum mollit exercitation qui exercitation ea quis
-              nulla laborum tempor id.
-            </h2>
-
-            <p>
-              Excepteur reprehenderit commodo non minim veniam occaecat. Sint
-              voluptate excepteur amet excepteur ullamco. Lorem eiusmod deserunt
-              ex cupidatat laboris ipsum cillum deserunt.
-            </p>
-            <v-img src="./assets/img/aie aie aie 1.png"> </v-img>
-          </v-row>
-        </v-container>
-      </div>
+        <v-col class="text-center" style="max-width: 830px">
+          <h2>
+            Duis velit laborum mollit exercitation qui exercitation ea quis
+            nulla laborum tempor id.
+          </h2>
+          <p>
+            Excepteur reprehenderit commodo non minim veniam occaecat. Sint
+            voluptate excepteur amet excepteur ullamco. Lorem eiusmod deserunt
+            ex cupidatat laboris ipsum cillum deserunt.
+          </p>
+          <v-img src="./assets/img/aie aie aie 1.png"> </v-img>
+        </v-col>
+      </v-row>
 
       <!-- end -->
 
