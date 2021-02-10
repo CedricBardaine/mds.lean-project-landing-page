@@ -96,7 +96,7 @@
         justify="center"
         style="background-color: #ffffff; height: 100vh"
       >
-        <v-container >
+        <v-container>
           <v-row justify="center" align="center">
             <v-row class="col-3 mx-2" align="end" style="height: 100%">
               <CardAvantage
@@ -128,6 +128,49 @@
           </v-row>
         </v-container>
       </v-row>
+
+      <!-- end -->
+
+      <!-- DIV : VIDEO -->
+
+      <div class="custom-videoDiv" style="height: 100vh">
+        <h3
+          style="
+            position: absolute;
+            color: white;
+            padding-left: 80px;
+            padding-top: 80px;
+            font-size: 80px;
+            width: 925px;
+          "
+        >
+          Découvrez les prémices d’Explor’Area
+        </h3>
+
+        <v-row align="center" justify="center" style="height: 100%">
+          <v-btn class="" fab style="height: 178px; width: 178px">
+            <v-icon color="#5139ea" style="font-size: 133.5px">
+              mdi-play
+            </v-icon>
+          </v-btn>
+        </v-row>
+
+        <v-btn
+          class="custom-mainBtnText"
+          rounded
+          style="
+            background-color: white;
+            color: rgb(81, 57, 234);
+            position: absolute;
+            bottom: 108px;
+            height: 66px;
+            font-size: 18px;
+            left: 80px;
+          "
+        >
+          Télécharger l’application
+        </v-btn>
+      </div>
 
       <!-- end -->
 
