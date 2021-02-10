@@ -8,11 +8,7 @@
       <!-- DIV : HERO  -->
 
       <div id="idHero" style="height: 100vh">
-        <v-row
-          id="idMenu"
-          no-gutters
-          style="height: 5%"
-        >
+        <v-row id="idMenu" no-gutters style="height: 5%">
           <v-row class="px-2" no-gutters align="center" justify="start">
             <span> Explor</span> <span class="indigo--text">'Area</span>
           </v-row>
@@ -27,7 +23,7 @@
 
         <v-row
           id="idHero-content"
-          class="yellow "
+          class="yellow"
           no-gutters
           align="center"
           justify="center"
@@ -59,17 +55,33 @@
         justify="center"
         style="background-color: #5139ea; color: white; height: 100vh"
       >
-        <v-col class="text-center" style="max-width: 830px">
-          <h2>
-            Duis velit laborum mollit exercitation qui exercitation ea quis
-            nulla laborum tempor id.
-          </h2>
-          <p>
-            Excepteur reprehenderit commodo non minim veniam occaecat. Sint
-            voluptate excepteur amet excepteur ullamco. Lorem eiusmod deserunt
-            ex cupidatat laboris ipsum cillum deserunt.
-          </p>
-          <v-img src="./assets/img/aie aie aie 1.png"> </v-img>
+        <v-col class="" style="">
+          <v-row>
+            <v-row class="col-12 col-sm-6">
+              <v-img src="./assets/img/aie aie aie 1.png"> </v-img>
+            </v-row>
+            <v-row class="col-12 col-sm-6">
+              <v-row class="pb-4" align="end">
+                <h2>
+                  Découvrez des villes en toute autonomie grâce à nos scénarios
+                  interactifs guidés par application mobile
+                </h2>
+              </v-row>
+
+              <v-row class="pt-4" align="start">
+                <p>
+                  Il y a des lieux dans lesquels vous passez tous les jours. Il
+                  y en a d’autres que vous voulez découvrir. Dans les deux cas,
+                  il y a Explor’Area. Vivez une aventure immersive et dépaysante
+                  en explorant la ville de votre choix. Au moment que vous
+                  voulez, vous sélectionnez un des scénarios disponible
+                  localement et l’application vous lance dans l’histoire. Au fil
+                  des épreuves et des pièges vous explorez la ville, découvrez
+                  ses secrets, tout en vous amusant.
+                </p>
+              </v-row>
+            </v-row>
+          </v-row>
         </v-col>
       </v-row>
 
@@ -102,6 +114,12 @@ export default {
 </script>
 
 <style >
+
+h2 {
+  /* font-size: 70px;
+  font-weight: 600; */
+}
+
 .custom-mainTitle {
   /* font-family: Averta CY; */
   font-size: 105px;
@@ -111,4 +129,5 @@ export default {
   font-size: 18px;
   font-weight: 600;
 }
+
 </style>
