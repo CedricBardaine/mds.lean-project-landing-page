@@ -51,10 +51,10 @@
               data-scroll-speed="1"
               src="./assets/img/aie aie aie 1.png"
               alt=""
-              style="height: fit-content; width: -webkit-fill-available"
+              style="height: fit-content; width: -webkit-fill-available ; width: 50%"
             />
             <div class="text-group">
-              <h2>
+              <h2 :style="$vuetify.breakpoint.width < 1264 ? 'font-size: 35px ; margin-bottom: 56px' : ''">
                 Découvrez des villes en toute autonomie grâce à nos scénarios
                 interactifs guidés par application mobile
               </h2>
