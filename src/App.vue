@@ -133,7 +133,7 @@
 
       <!-- DIV : VIDEO -->
 
-      <div class="custom-videoDiv" style="height: 100vh">
+      <div class="custom-videoDiv" style="height: 100vh ; position: relative">
         <h3
           style="
             position: absolute;
@@ -163,14 +163,30 @@
             color: rgb(81, 57, 234);
             position: absolute;
             bottom: 108px;
+            margin-left: 80px;
             height: 66px;
             font-size: 18px;
-            left: 80px;
           "
         >
           Télécharger l’application
         </v-btn>
       </div>
+
+      <!-- end -->
+
+      <!-- DIV : TESTIMONIALS -->
+
+      <div style="height: 100vh ; background-color: #5139ea ; color: white ;  ">
+        <h3 style="
+            position: absolute;
+            color: white;
+            padding-left: 178px;
+            padding-top: 113px;
+            font-size: 80px;
+            width: 620px;
+          ">Ils ont testé, ils ont aimé</h3>
+      </div>
+
 
       <!-- end -->
 
