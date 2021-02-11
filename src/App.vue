@@ -22,7 +22,8 @@
               avec notre exploration<br />
               game phygital
             </h1>
-            <a href="/" class="button-main">S'inscrire</a>
+            <a :href="registerLink
+            " class="button-main">S'inscrire</a>
           </div>
           <img
             class="image-hero parallax-1"
@@ -127,7 +128,7 @@
             <div class="play-button">
               <img src="./assets/img/play.svg" alt="" />
             </div>
-            <a href="/" class="button-main">S'inscrire</a>
+            <a :href="registerLink" class="button-main">S'inscrire</a>
           </div>
           <img
             src="./assets/img/anatoliy-gromov-o7fpEKG6W6U-unsplash_1.png"
@@ -230,7 +231,7 @@
           <img src="./assets/img/illu-pre-footer.png" alt="" />
           <div class="pre-footer-content">
             <h2>Accédez à notre application</h2>
-            <a href="#" class="button-main">S'inscrire</a>
+            <a :href="registerLink" class="button-main">S'inscrire</a>
           </div>
         </section>
         <section class="footer" data-scroll-section>
@@ -281,20 +282,21 @@
 </template>
 
 <script>
-import './assets/css/locomotive-scroll.css';
-import './assets/css/css.css';
-import locomotiveScroll from 'locomotive-scroll';
-import CardAvantage from './components/CardAvantage';
-import CardTestimonial from './components/CardTestimonial';
+import "./assets/css/locomotive-scroll.css";
+import "./assets/css/css.css";
+import locomotiveScroll from "locomotive-scroll";
+import CardAvantage from "./components/CardAvantage";
+import CardTestimonial from "./components/CardTestimonial";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: { CardAvantage, CardTestimonial },
 
   data() {
     return {
-      scrollIns: null
+      scrollIns: null,
+      registerLink: "https://docs.google.com/forms/d/14mdkUVZtl9sRBGoyUJAmL6_6RGMNe-teJRTWw6r1WUY/prefill",
     };
   },
 
@@ -309,11 +311,11 @@ export default {
     initLocoScroll() {
       const _self = this;
       this.scroll = new locomotiveScroll({
-        el: _self.$refs['scrollSections'],
+        el: _self.$refs["scrollSections"],
         smooth: true,
-        lerp: 0.1
+        lerp: 0.1,
       });
-    }
-  }
+    },
+  },
 };
 </script>
