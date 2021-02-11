@@ -22,8 +22,7 @@
               avec notre exploration<br />
               game phygital
             </h1>
-            <a :href="registerLink
-            " class="button-main">S'inscrire</a>
+            <a :href="registerLink" class="button-main">S'inscrire</a>
           </div>
           <img
             class="image-hero parallax-1"
@@ -52,10 +51,10 @@
               data-scroll-speed="1"
               src="./assets/img/aie aie aie 1.png"
               alt=""
-              style="height: fit-content; width: -webkit-fill-available"
+              style="height: fit-content; width: -webkit-fill-available ; width: 50%"
             />
             <div class="text-group">
-              <h2>
+              <h2 :style="$vuetify.breakpoint.width < 1264 ? 'font-size: 35px ; margin-bottom: 56px' : ''">
                 Découvrez des villes en toute autonomie grâce à nos scénarios
                 interactifs guidés par application mobile
               </h2>
@@ -126,7 +125,11 @@
           <div class="section-content">
             <h3>Découvrez les<br />prémices d’Explor’Area</h3>
             <div class="play-button">
-              <img src="./assets/img/play.svg" alt="" />
+              <img
+                src="./assets/img/play.svg"
+                alt=""
+                style="inline-size: fit-content"
+              />
             </div>
             <a :href="registerLink" class="button-main">S'inscrire</a>
           </div>
@@ -296,7 +299,8 @@ export default {
   data() {
     return {
       scrollIns: null,
-      registerLink: "https://docs.google.com/forms/d/14mdkUVZtl9sRBGoyUJAmL6_6RGMNe-teJRTWw6r1WUY/prefill",
+      registerLink:
+        "https://docs.google.com/forms/d/14mdkUVZtl9sRBGoyUJAmL6_6RGMNe-teJRTWw6r1WUY/prefill",
     };
   },
 
