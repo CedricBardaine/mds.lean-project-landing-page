@@ -222,7 +222,7 @@
 
       <!-- DIV : FAQ -->
 
-      <div style="height: 100vh; background-color: white; ">
+      <div style="height: 100vh; background-color: white">
         <v-row justify="center" style="margin: 80px 80px">
           <h3>Questions fréquentes</h3>
         </v-row>
@@ -332,32 +332,69 @@
 
       <!-- end -->
 
+      <!-- DIV : Footer -->
 
-<!-- DIV : Footer -->
-
-      <v-row style="background-color: #5139ea; color: white ; min-height: 12px" no-gutters>
-<v-row  class="col-4" no-gutters justify="center" align="center">Explor'Area</v-row>
-<v-row  class="col-4" no-gutters justify="center" align="center">
-  <p>Explor’Area est un projet développé dans le cadre  des Master de l’érowe My Digital School Rennes.</p>
-</v-row>
-<v-row  class="col-4" no-gutters justify="center">
-  <v-btn color="white" fab @click="smoothScrollToTop()">
-    <v-icon color="#5139ea">mdi-arrow-up</v-icon>
-  </v-btn>
-</v-row>
-
-</v-row>
-
-<!-- end -->
-
-      <!-- DIV : rien c'est pour le dev -->
-
-      <div>
-        var de dev lisez pas :
-        <span class="red white--text px-2">
-          ({{ $vuetify.breakpoint.name }})
-        </span>
-      </div>
+      <v-row
+        style="background-color: #5139ea; color: white; min-height: 12px"
+        no-gutters
+      >
+        <v-row
+          class="col-3"
+          no-gutters
+          justify="center"
+          style="margin-top: 142px"
+          >Explor'Area</v-row
+        >
+        <v-row
+          class="col-6"
+          style="margin-top: 202px"
+          no-gutters
+          justify="center"
+          align="center"
+        >
+          <v-row no-gutters>
+            <p style="width: 66%">
+              Explor’Area est un projet développé dans le cadre des Master de
+              l’éroce My Digital School Rennes.
+            </p>
+          </v-row>
+          <v-row no-gutters>
+            <v-row no-gutters class="col-4 ma-0 pa-2" align="center"
+              >Home <br />
+              About <br />
+              Contact</v-row
+            >
+            <v-row no-gutters class="col-4 ma-0 pa-2" align="center"
+              >CGU <br />
+              CGV <br />
+              Mentions légales</v-row
+            >
+            <v-row no-gutters class="col-4 ma-0 pa-2" align="center">
+              <v-row no-gutters class="col-12"> Suivez nous </v-row>
+              <v-row no-gutters class="col-12">
+                <v-icon color="white" class="mr-4">mdi-facebook</v-icon>
+                <v-icon color="white" class="mr-4">mdi-instagram</v-icon>
+                <v-icon color="white" class="mr-4">mdi-twitter</v-icon>
+              </v-row>
+            </v-row>
+            <small style="margin: 124px 0px 32px 0px; font-size: 11px"
+              >Concepteurs et propriétaires : Cédric Bardaine, Florian Calvo,
+              Manon Cauque, Yaneck Chareyre, Gloria Chesnel et Sébastien
+              Degrange</small
+            >
+          </v-row>
+        </v-row>
+        <v-row
+          class="col-3"
+          style="margin-top: 124px"
+          no-gutters
+          justify="center"
+        >
+          <v-btn color="white" fab @click="smoothScrollToTop()">
+            <v-icon color="#5139ea">mdi-arrow-up</v-icon>
+          </v-btn>
+        </v-row>
+      </v-row>
 
       <!-- end -->
     </v-main>
@@ -380,8 +417,8 @@ export default {
   }),
   methods: {
     smoothScrollToTop() {
-      window.scrollTo({top: 0, behavior: 'smooth'});
-    }
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    },
   },
 };
 </script>
