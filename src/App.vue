@@ -359,17 +359,17 @@
             </p>
           </v-row>
           <v-row no-gutters>
-            <v-row no-gutters class="col-4 ma-0 pa-2" align="center"
+            <v-row no-gutters class="col-12 col-md-4 ma-0 pa-2" align="center"
               >Home <br />
               About <br />
-              Contact</v-row
-            >
-            <v-row no-gutters class="col-4 ma-0 pa-2" align="center"
+              Contact
+            </v-row>
+            <v-row no-gutters class="col-12 col-md-4 ma-0 pa-2" align="center"
               >CGU <br />
               CGV <br />
-              Mentions légales</v-row
-            >
-            <v-row no-gutters class="col-4 ma-0 pa-2" align="center">
+              Mentions légales
+            </v-row>
+            <v-row no-gutters class="col-12 col-md-4 ma-0 pa-2" align="center">
               <v-row no-gutters class="col-12"> Suivez nous </v-row>
               <v-row no-gutters class="col-12">
                 <v-icon color="white" class="mr-4">mdi-facebook</v-icon>
