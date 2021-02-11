@@ -116,64 +116,6 @@
 
         <!-- end -->
 
-        <!-- DIV : VIDEO -->
-
-        <section
-          class="section section-video custom-videoDiv"
-          data-scroll-section
-        >
-          <div class="section-content">
-            <h3>Découvrez les<br />prémices d’Explor’Area</h3>
-            <div class="play-button">
-              <img
-                src="./assets/img/play.svg"
-                alt=""
-                style="inline-size: fit-content"
-              />
-            </div>
-            <a :href="registerLink" class="button-main">S'inscrire</a>
-          </div>
-          <img
-            src="./assets/img/anatoliy-gromov-o7fpEKG6W6U-unsplash_1.png"
-            class="img-bg"
-            data-scroll
-            data-scroll-speed="2"
-          />
-        </section>
-
-        <!-- end -->
-
-        <!-- DIV : TESTIMONIALS -->
-
-        <section class="section section-testimonials" data-scroll-section>
-          <div class="section-content">
-            <h2>
-              Ils ont testé,<br />
-              ils ont aimé
-            </h2>
-            <div id="direction">
-              <div
-                class="cards-container"
-                data-scroll
-                data-scroll-direction="horizontal"
-                data-scroll-target="#direction"
-                data-scroll-speed="5"
-              >
-                <CardTestimonial />
-                <CardTestimonial />
-                <CardTestimonial />
-                <CardTestimonial />
-                <CardTestimonial />
-                <CardTestimonial />
-                <CardTestimonial />
-                <CardTestimonial />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- end -->
-
         <section class="section section-faq" data-scroll-section>
           <div class="section-content">
             <h2>
@@ -289,12 +231,11 @@ import "./assets/css/locomotive-scroll.css";
 import "./assets/css/css.css";
 import locomotiveScroll from "locomotive-scroll";
 import CardAvantage from "./components/CardAvantage";
-import CardTestimonial from "./components/CardTestimonial";
 
 export default {
   name: "App",
 
-  components: { CardAvantage, CardTestimonial },
+  components: { CardAvantage },
 
   data() {
     return {
