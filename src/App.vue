@@ -220,6 +220,106 @@
 
       <!-- end -->
 
+      <!-- DIV : FAQ -->
+
+      <div style="height: 100vh; background-color: white; position: relative">
+        <v-row justify="center" style="margin: 80px 80px">
+          <h3>Questions fréquentes</h3>
+        </v-row>
+        <v-row justify="center">
+          <v-container>
+            <v-expansion-panels inset>
+              <v-expansion-panel>
+                <v-expansion-panel-header disable-icon-rotate>
+                  Qu’est-ce qu’un Exploration Game ?
+                  <template v-slot:actions>
+                    <v-icon color="#5139ea"> mdi-plus </v-icon>
+                  </template>
+                </v-expansion-panel-header>
+                <v-expansion-panel-content>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </v-expansion-panel-content>
+              </v-expansion-panel>
+              <v-expansion-panel>
+                <v-expansion-panel-header disable-icon-rotate>
+                  Qu'est ce qu'un jeu phygital ?
+                  <template v-slot:actions>
+                    <v-icon color="#5139ea"> mdi-plus </v-icon>
+                  </template>
+                </v-expansion-panel-header>
+                <v-expansion-panel-content>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </v-expansion-panel-content>
+              </v-expansion-panel>
+              <v-expansion-panel>
+                <v-expansion-panel-header disable-icon-rotate>
+                  A combien peut-on jouer à un scénario Explor’Area ?
+                  <template v-slot:actions>
+                    <v-icon color="#5139ea"> mdi-plus </v-icon>
+                  </template>
+                </v-expansion-panel-header>
+                <v-expansion-panel-content>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </v-expansion-panel-content>
+              </v-expansion-panel>
+              <v-expansion-panel>
+                <v-expansion-panel-header disable-icon-rotate>
+                  Quel est le niveau de difficulté du jeu ?
+                  <template v-slot:actions>
+                    <v-icon color="#5139ea"> mdi-plus </v-icon>
+                  </template>
+                </v-expansion-panel-header>
+                <v-expansion-panel-content>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </v-expansion-panel-content>
+              </v-expansion-panel>
+              <v-expansion-panel>
+                <v-expansion-panel-header disable-icon-rotate>
+                  Peut-on rejouer un de vos scénarios ?
+                  <template v-slot:actions>
+                    <v-icon color="#5139ea"> mdi-plus </v-icon>
+                  </template>
+                </v-expansion-panel-header>
+                <v-expansion-panel-content>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </v-expansion-panel-content>
+              </v-expansion-panel>
+              <v-expansion-panel>
+                <v-expansion-panel-header disable-icon-rotate>
+                  Dans quelle ville puis-je jouer à Explor’Area ?
+                  <template v-slot:actions>
+                    <v-icon color="#5139ea"> mdi-plus </v-icon>
+                  </template>
+                </v-expansion-panel-header>
+                <v-expansion-panel-content>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </v-expansion-panel-content>
+              </v-expansion-panel>
+            </v-expansion-panels>
+          </v-container>
+        </v-row>
+      </div>
+
+      <!-- end -->
+
       <!-- DIV : rien c'est pour le dev -->
 
       <div>
