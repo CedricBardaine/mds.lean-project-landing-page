@@ -51,10 +51,20 @@
               data-scroll-speed="1"
               src="./assets/img/aie aie aie 1.png"
               alt=""
-              style="height: fit-content; width: -webkit-fill-available ; width: 50%"
+              style="
+                height: fit-content;
+                width: -webkit-fill-available;
+                width: 50%;
+              "
             />
             <div class="text-group">
-              <h2 :style="$vuetify.breakpoint.width < 1264 ? 'font-size: 35px ; margin-bottom: 56px' : ''">
+              <h2
+                :style="
+                  $vuetify.breakpoint.width < 1264
+                    ? 'font-size: 35px ; margin-bottom: 56px'
+                    : ''
+                "
+              >
                 Découvrez des villes en toute autonomie grâce à nos scénarios
                 interactifs guidés par application mobile
               </h2>
@@ -116,62 +126,117 @@
 
         <!-- end -->
 
-        <section class="section section-faq" data-scroll-section>
+        <section
+          class="section section-faq"
+          style="background-color: #5139ea"
+          data-scroll-section
+        >
           <div class="section-content">
-            <h2>
-              Questions<br />
-              fréquentes
-            </h2>
-            <div class="faq-container">
-              <div class="faq-question-upper">
-                <div class="q-title">Qu'est-ce qu'un exploration game ?</div>
-                <img src="./assets/img/plus-button.svg" alt="" />
-              </div>
-              <div class="faq-question-line"></div>
+            <!-- DIV : FAQ -->
+
+            <div style="height: 80vh; position: relative">
+              <v-row justify="center" style="margin: 80px 80px">
+                <h3 style="color: white">Questions fréquentes</h3>
+              </v-row>
+              <v-row justify="center">
+                <v-container>
+                  <v-expansion-panels inset>
+                    <v-expansion-panel>
+                      <v-expansion-panel-header disable-icon-rotate>
+                        Qu’est-ce qu’un Exploration Game ?
+                        <template v-slot:actions>
+                          <v-btn x-small color="#5139ea" fab elevation="0">
+                            <v-icon color="white"> mdi-plus </v-icon>
+                          </v-btn>
+                        </template>
+                      </v-expansion-panel-header>
+                      <v-expansion-panel-content>
+                        C’est un jeu d’aventure scénarisée que vous pouvez
+                        pratiquer de manière autonome.
+                      </v-expansion-panel-content>
+                    </v-expansion-panel>
+                    <v-expansion-panel>
+                      <v-expansion-panel-header disable-icon-rotate>
+                        Qu'est ce qu'un jeu phygital ?
+                        <template v-slot:actions>
+                          <v-btn x-small color="#5139ea" fab elevation="0">
+                            <v-icon color="white"> mdi-plus </v-icon>
+                          </v-btn>
+                        </template>
+                      </v-expansion-panel-header>
+                      <v-expansion-panel-content>
+                        C’est un jeu qui offre une expérience physique,
+                        propulsée par une application digitale.
+                      </v-expansion-panel-content>
+                    </v-expansion-panel>
+                    <v-expansion-panel>
+                      <v-expansion-panel-header disable-icon-rotate>
+                        A combien peut-on jouer à un scénario Explor’Area ?
+                        <template v-slot:actions>
+                          <v-btn x-small color="#5139ea" fab elevation="0">
+                            <v-icon color="white"> mdi-plus </v-icon>
+                          </v-btn>
+                        </template>
+                      </v-expansion-panel-header>
+                      <v-expansion-panel-content>
+                        Nos aventures se pratiquent seul, en duo, en couple, en
+                        groupe d’amis ou en famille. Un seul smartphone est
+                        nécessaire pour suivre l’histoire et jouer.
+                      </v-expansion-panel-content>
+                    </v-expansion-panel>
+                    <v-expansion-panel>
+                      <v-expansion-panel-header disable-icon-rotate>
+                        Quel est le niveau de difficulté du jeu ?
+                        <template v-slot:actions>
+                          <v-btn x-small color="#5139ea" fab elevation="0">
+                            <v-icon color="white"> mdi-plus </v-icon>
+                          </v-btn>
+                        </template>
+                      </v-expansion-panel-header>
+                      <v-expansion-panel-content>
+                        Lorsque vous sélectionnez un scénario, son niveau de
+                        difficulté théorique vous est annoncé. La complexité des
+                        énigmes et la durée du parcours sont évolutives.
+                      </v-expansion-panel-content>
+                    </v-expansion-panel>
+                    <v-expansion-panel>
+                      <v-expansion-panel-header disable-icon-rotate>
+                        Peut-on rejouer un de vos scénarios ?
+                        <template v-slot:actions>
+                          <v-btn x-small color="#5139ea" fab elevation="0">
+                            <v-icon color="white"> mdi-plus </v-icon>
+                          </v-btn>
+                        </template>
+                      </v-expansion-panel-header>
+                      <v-expansion-panel-content>
+                        Vous avez envie de partager votre aventure avec d’autres
+                        personnes ? Lancez l’application sur votre smartphone et
+                        vous rejouez autant que vous voulez.
+                      </v-expansion-panel-content>
+                    </v-expansion-panel>
+                    <v-expansion-panel>
+                      <v-expansion-panel-header disable-icon-rotate>
+                        Dans quelle ville puis-je jouer à Explor’Area ?
+                        <template v-slot:actions>
+                          <v-btn x-small color="#5139ea" fab elevation="0">
+                            <v-icon color="white"> mdi-plus </v-icon>
+                          </v-btn>
+                        </template>
+                      </v-expansion-panel-header>
+                      <v-expansion-panel-content>
+                        Pour notre lancement, c’est la ville de Rennes qui
+                        accueillera notre tout premier scénario. Vous en serez ?
+                      </v-expansion-panel-content>
+                    </v-expansion-panel>
+                  </v-expansion-panels>
+                </v-container>
+              </v-row>
             </div>
-            <div class="faq-container">
-              <div class="faq-question-upper">
-                <div class="q-title">Qu’est-ce qu’un jeu phygital ?</div>
-                <img src="./assets/img/plus-button.svg" alt="" />
-              </div>
-              <div class="faq-question-line"></div>
-            </div>
-            <div class="faq-container">
-              <div class="faq-question-upper">
-                <div class="q-title">
-                  A combien peut-on jouer à un scénario Explor’Area ?
-                </div>
-                <img src="./assets/img/plus-button.svg" alt="" />
-              </div>
-              <div class="faq-question-line"></div>
-            </div>
-            <div class="faq-container">
-              <div class="faq-question-upper">
-                <div class="q-title">
-                  Quel est le niveau de difficulté du jeu ?
-                </div>
-                <img src="./assets/img/plus-button.svg" alt="" />
-              </div>
-              <div class="faq-question-line"></div>
-            </div>
-            <div class="faq-container">
-              <div class="faq-question-upper">
-                <div class="q-title">Peut-on rejouer un de vos scénarios ?</div>
-                <img src="./assets/img/plus-button.svg" alt="" />
-              </div>
-              <div class="faq-question-line"></div>
-            </div>
-            <div class="faq-container">
-              <div class="faq-question-upper">
-                <div class="q-title">
-                  Dans quelle ville puis-je jouer à Explor’Area ?
-                </div>
-                <img src="./assets/img/plus-button.svg" alt="" />
-              </div>
-              <div class="faq-question-line"></div>
-            </div>
+
+            <!-- end -->
           </div>
         </section>
+
         <section class="section section-pre-footer" data-scroll-section>
           <img src="./assets/img/illu-pre-footer.png" alt="" />
           <div class="pre-footer-content">
