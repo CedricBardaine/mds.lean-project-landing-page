@@ -132,7 +132,7 @@
             src="./assets/img/anatoliy-gromov-o7fpEKG6W6U-unsplash_1.png"
             class="img-bg"
             data-scroll
-            data-scroll-speed="1.5"
+            data-scroll-speed="2"
           />
         </section>
 
