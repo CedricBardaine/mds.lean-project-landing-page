@@ -222,7 +222,7 @@
 
       <!-- DIV : FAQ -->
 
-      <div style="height: 100vh; background-color: white; position: relative">
+      <div style="height: 100vh; background-color: white; ">
         <v-row justify="center" style="margin: 80px 80px">
           <h3>Questions fréquentes</h3>
         </v-row>
@@ -332,6 +332,24 @@
 
       <!-- end -->
 
+
+<!-- DIV : Footer -->
+
+      <v-row style="background-color: #5139ea; color: white ; min-height: 12px" no-gutters>
+<v-row  class="col-4" no-gutters justify="center" align="center">Explor'Area</v-row>
+<v-row  class="col-4" no-gutters justify="center" align="center">
+  <p>Explor’Area est un projet développé dans le cadre  des Master de l’érowe My Digital School Rennes.</p>
+</v-row>
+<v-row  class="col-4" no-gutters justify="center">
+  <v-btn color="white" fab @click="smoothScrollToTop()">
+    <v-icon color="#5139ea">mdi-arrow-up</v-icon>
+  </v-btn>
+</v-row>
+
+</v-row>
+
+<!-- end -->
+
       <!-- DIV : rien c'est pour le dev -->
 
       <div>
@@ -360,5 +378,10 @@ export default {
   data: () => ({
     //
   }),
+  methods: {
+    smoothScrollToTop() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+  },
 };
 </script>
