@@ -51,6 +51,7 @@
               data-scroll-speed="1"
               src="./assets/img/aie aie aie 1.png"
               alt=""
+              style="height: fit-content; width: -webkit-fill-available"
             />
             <div class="text-group">
               <h2>
