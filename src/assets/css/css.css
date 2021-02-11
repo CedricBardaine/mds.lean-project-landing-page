@@ -16,6 +16,7 @@
 
 html {
   overflow-x: hidden;
+  font-family: AvertaCY !important;
 }
 
 body {
@@ -25,14 +26,18 @@ body {
 
 a {
   font-family: AvertaCY !important;
+  color: white !important;
+  text-decoration: none;
 }
 
-h2 {
+h1,
+h2,
+h3,
+h4 {
   font-family: AvertaCY !important;
 }
 
 h3 {
-  font-family: AvertaCY !important;
   font-size: 40px;
 }
 
@@ -229,4 +234,170 @@ h3 {
   width: 110vw;
   height: auto;
   z-index: -1;
+}
+
+.section-testimonials {
+  background-color: #5139ea;
+  padding: 200px 0;
+}
+
+.section-testimonials .section-content {
+  margin: 0 12vw;
+}
+
+.section-testimonials h2 {
+  color: white;
+  line-height: 107%;
+  font-size: 80px;
+}
+
+.section-testimonials .cards-container {
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  margin-top: 200px;
+}
+
+.section-testimonials .cards-container .card-testimonial {
+  position: relative;
+  background-color: white;
+  max-width: 440px;
+  height: 500px;
+  border-radius: 50px;
+  padding-left: 30px;
+  padding-bottom: 60px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 75px;
+}
+
+.section-testimonials .cards-container .card-testimonial .apostrophe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: -25px;
+}
+
+.section-testimonials .cards-container .card-testimonial .photo-container {
+  padding-top: 24px;
+  margin-bottom: 40px;
+}
+
+.section-testimonials .cards-container .card-testimonial .c-name {
+  margin-bottom: 24px;
+}
+
+.section-testimonials .cards-container .card-testimonial .c-content {
+  font-family: AvertaCY !important;
+  max-width: 80%;
+  white-space: normal;
+}
+
+.section-faq {
+  padding: 260px 0;
+}
+
+.section-faq .section-content {
+  margin: 0 12vw;
+}
+
+.section-faq .section-content h2 {
+  text-align: center;
+  font-size: 80px;
+  line-height: 86%;
+  margin-bottom: 200px;
+}
+
+.section-faq .section-content .faq-container {
+  width: 100%;
+  font-family: AvertaCY !important;
+  margin-bottom: 60px;
+}
+
+.section-faq .section-content .faq-container .faq-question-upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.section-faq .section-content .faq-container .faq-question-upper .q-title {
+  font-size: 32px;
+}
+
+.section-faq .section-content .faq-container .faq-question-line {
+  height: 2px;
+  background-color: black;
+}
+
+.section-pre-footer {
+  background-color: #7967ef;
+  color: white;
+  margin-top: 200px;
+  min-height: 400px;
+}
+
+.section-pre-footer img {
+  position: absolute;
+  left: 0;
+  max-width: 40%;
+  height: auto;
+  margin-top: -250px;
+}
+
+.pre-footer-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+.section-pre-footer .pre-footer-content h2 {
+  font-size: 60px;
+  margin-bottom: 75px;
+}
+
+.footer {
+  background-color: #5139ea;
+  color: white;
+  min-height: 600px;
+  padding-top: 142px;
+  font-family: AvertaCY !important;
+}
+
+.footer .section-content h4 {
+  color: white;
+  font-size: 32px;
+}
+
+.footer .section-content .footer-inner {
+  margin-left: 20%;
+}
+
+.footer .section-content .footer-inner .list {
+  display: flex;
+  padding-top: 75px;
+}
+
+.footer .section-content .footer-inner .list .col {
+  display: flex;
+  flex-direction: column;
+  margin-right: 250px;
+}
+
+.footer .section-content .footer-inner .list .col .f-link {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.footer .section-content .footer-inner .list .socials {
+  display: flex;
+}
+
+.footer .section-content .footer-inner .list .socials .social-link {
+  margin-right: 50px;
+}
+.footer .section-content .footer-inner .copyright {
+  font-size: 12px;
+  margin-top: 70px;
 }

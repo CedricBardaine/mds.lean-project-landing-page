@@ -132,7 +132,7 @@
             src="./assets/img/anatoliy-gromov-o7fpEKG6W6U-unsplash_1.png"
             class="img-bg"
             data-scroll
-            data-scroll-speed="1"
+            data-scroll-speed="1.5"
           />
         </section>
 
@@ -141,23 +141,139 @@
         <!-- DIV : TESTIMONIALS -->
 
         <section class="section section-testimonials" data-scroll-section>
-          <h2>
-            Ils ont testé, ils ont aimé
-          </h2>
+          <div class="section-content">
+            <h2>
+              Ils ont testé,<br />
+              ils ont aimé
+            </h2>
+            <div id="direction">
+              <div
+                class="cards-container"
+                data-scroll
+                data-scroll-direction="horizontal"
+                data-scroll-target="#direction"
+                data-scroll-speed="5"
+              >
+                <CardTestimonial />
+                <CardTestimonial />
+                <CardTestimonial />
+                <CardTestimonial />
+                <CardTestimonial />
+                <CardTestimonial />
+                <CardTestimonial />
+                <CardTestimonial />
+              </div>
+            </div>
+          </div>
         </section>
 
         <!-- end -->
 
-        <!-- DIV : rien c'est pour le dev -->
-
-        <div>
-          var de dev lisez pas :
-          <span class="red white--text px-2">
-            ({{ $vuetify.breakpoint.name }})
-          </span>
-        </div>
-
-        <!-- end -->
+        <section class="section section-faq" data-scroll-section>
+          <div class="section-content">
+            <h2>
+              Questions<br />
+              fréquentes
+            </h2>
+            <div class="faq-container">
+              <div class="faq-question-upper">
+                <div class="q-title">Qu'est-ce qu'un exploration game ?</div>
+                <img src="./assets/img/plus-button.svg" alt="" />
+              </div>
+              <div class="faq-question-line"></div>
+            </div>
+            <div class="faq-container">
+              <div class="faq-question-upper">
+                <div class="q-title">Qu’est-ce qu’un jeu phygital ?</div>
+                <img src="./assets/img/plus-button.svg" alt="" />
+              </div>
+              <div class="faq-question-line"></div>
+            </div>
+            <div class="faq-container">
+              <div class="faq-question-upper">
+                <div class="q-title">
+                  A combien peut-on jouer à un scénario Explor’Area ?
+                </div>
+                <img src="./assets/img/plus-button.svg" alt="" />
+              </div>
+              <div class="faq-question-line"></div>
+            </div>
+            <div class="faq-container">
+              <div class="faq-question-upper">
+                <div class="q-title">
+                  Quel est le niveau de difficulté du jeu ?
+                </div>
+                <img src="./assets/img/plus-button.svg" alt="" />
+              </div>
+              <div class="faq-question-line"></div>
+            </div>
+            <div class="faq-container">
+              <div class="faq-question-upper">
+                <div class="q-title">Peut-on rejouer un de vos scénarios ?</div>
+                <img src="./assets/img/plus-button.svg" alt="" />
+              </div>
+              <div class="faq-question-line"></div>
+            </div>
+            <div class="faq-container">
+              <div class="faq-question-upper">
+                <div class="q-title">
+                  Dans quelle ville puis-je jouer à Explor’Area ?
+                </div>
+                <img src="./assets/img/plus-button.svg" alt="" />
+              </div>
+              <div class="faq-question-line"></div>
+            </div>
+          </div>
+        </section>
+        <section class="section section-pre-footer" data-scroll-section>
+          <img src="./assets/img/illu-pre-footer.png" alt="" />
+          <div class="pre-footer-content">
+            <h2>Accédez à notre application</h2>
+            <a href="#" class="button-main">S'inscrire</a>
+          </div>
+        </section>
+        <section class="footer" data-scroll-section>
+          <div class="section-content">
+            <h4 class="logo">Explor'Area</h4>
+            <div class="footer-inner">
+              <div class="desc">
+                Explor’Area est un projet développé dans le cadre<br />
+                des Master de l’école My Digital School Rennes.
+              </div>
+              <div class="list">
+                <div class="col">
+                  <a href="" class="f-link">Home</a>
+                  <a href="" class="f-link">About</a>
+                  <a href="" class="f-link">Contact</a>
+                </div>
+                <div class="col">
+                  <a href="" class="f-link">CGU</a>
+                  <a href="" class="f-link">CGV</a>
+                  <a href="" class="f-link">Mentions légales</a>
+                </div>
+                <div class="col">
+                  <p href="" class="f-link">Suivez-nous</p>
+                  <div class="socials">
+                    <a href="" class="social-link"
+                      ><img src="./assets/img/facebook-f.svg"
+                    /></a>
+                    <a href="" class="social-link">
+                      <img src="./assets/img/twitter-alt.svg" />
+                    </a>
+                    <a href="" class="social-link">
+                      <img src="./assets/img/instagram.svg" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="copyright">
+                Concepteurs et propriétaires : Cédric Bardaine, Florian Cario,
+                Manon Cauque, Yaneck Chareyre, Gloria Chesnel et Sébastien
+                Degrange
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </v-main>
   </v-app>
@@ -168,11 +284,12 @@ import './assets/css/locomotive-scroll.css';
 import './assets/css/css.css';
 import locomotiveScroll from 'locomotive-scroll';
 import CardAvantage from './components/CardAvantage';
+import CardTestimonial from './components/CardTestimonial';
 
 export default {
   name: 'App',
 
-  components: { CardAvantage },
+  components: { CardAvantage, CardTestimonial },
 
   data() {
     return {
