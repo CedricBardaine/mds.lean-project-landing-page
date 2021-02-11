@@ -46,3 +46,23 @@ font-weight: 600;
   background-image: url("../img/anatoliy-gromov-o7fpEKG6W6U-unsplash_1.png");
   background-size: cover;
 }
+
+/* See : https://css-tricks.com/pure-css-horizontal-scrolling/
+/* horizontal-scroll-wrapper */
+/* .custom-horizontalScrollContainer {
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  transform: rotate(-90deg);
+  transform-origin: right top;
+
+  transform:rotate(-90deg) translateY(-100px);
+} */
+
+/* horizontal-scroll-wrapper > div */
+/* .custom-horizontalScrollItem {
+
+  transform: rotate(90deg);
+  transform-origin: right top;
+}  */

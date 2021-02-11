@@ -133,7 +133,7 @@
 
       <!-- DIV : VIDEO -->
 
-      <div class="custom-videoDiv" style="height: 100vh ; position: relative">
+      <div class="custom-videoDiv" style="height: 100vh; position: relative">
         <h3
           style="
             position: absolute;
@@ -176,17 +176,47 @@
 
       <!-- DIV : TESTIMONIALS -->
 
-      <div style="height: 100vh ; background-color: #5139ea ; color: white ;  ">
-        <h3 style="
+      <div
+        style="
+          height: 100vh;
+          background-color: #5139ea;
+          color: white;
+          position: relative;
+        "
+      >
+        <h3
+          style="
             position: absolute;
             color: white;
-            padding-left: 178px;
-            padding-top: 113px;
+            left: 178px;
+            top: 113px;
             font-size: 80px;
-            width: 620px;
-          ">Ils ont testé, ils ont aimé</h3>
-      </div>
+            width: 531px;
+          "
+        >
+          Ils ont testé, ils ont aimé
+        </h3>
 
+        <!-- TODO: faire la liste qui défile -->
+        <v-row
+          no-gutters
+          style="
+            position: absolute;
+            bottom: 211px;
+            left: 277px;
+            flex-wrap: nowrap;
+          "
+        >
+          <CardTestimonials
+            img="https://raw.githubusercontent.com/ArjunAtlast/Profile-Card/master/assets/john-doe.png"
+          />
+          <CardTestimonials />
+          <CardTestimonials />
+          <CardTestimonials />
+          <CardTestimonials />
+          <CardTestimonials />
+        </v-row>
+      </div>
 
       <!-- end -->
 
@@ -208,11 +238,12 @@
 import "./assets/css/css.css";
 
 import CardAvantage from "./components/CardAvantage";
+import CardTestimonials from "./components/CardTestimonials";
 
 export default {
   name: "App",
 
-  components: { CardAvantage },
+  components: { CardAvantage, CardTestimonials },
 
   data: () => ({
     //
