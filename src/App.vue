@@ -233,7 +233,9 @@
                 <v-expansion-panel-header disable-icon-rotate>
                   Qu’est-ce qu’un Exploration Game ?
                   <template v-slot:actions>
-                    <v-icon color="#5139ea"> mdi-plus </v-icon>
+                    <v-btn x-small color="#5139ea" fab elevation="0">
+                      <v-icon color="white"> mdi-plus </v-icon>
+                    </v-btn>
                   </template>
                 </v-expansion-panel-header>
                 <v-expansion-panel-content>
@@ -247,7 +249,9 @@
                 <v-expansion-panel-header disable-icon-rotate>
                   Qu'est ce qu'un jeu phygital ?
                   <template v-slot:actions>
-                    <v-icon color="#5139ea"> mdi-plus </v-icon>
+                    <v-btn x-small color="#5139ea" fab elevation="0">
+                      <v-icon color="white"> mdi-plus </v-icon>
+                    </v-btn>
                   </template>
                 </v-expansion-panel-header>
                 <v-expansion-panel-content>
@@ -261,7 +265,9 @@
                 <v-expansion-panel-header disable-icon-rotate>
                   A combien peut-on jouer à un scénario Explor’Area ?
                   <template v-slot:actions>
-                    <v-icon color="#5139ea"> mdi-plus </v-icon>
+                    <v-btn x-small color="#5139ea" fab elevation="0">
+                      <v-icon color="white"> mdi-plus </v-icon>
+                    </v-btn>
                   </template>
                 </v-expansion-panel-header>
                 <v-expansion-panel-content>
@@ -275,7 +281,9 @@
                 <v-expansion-panel-header disable-icon-rotate>
                   Quel est le niveau de difficulté du jeu ?
                   <template v-slot:actions>
-                    <v-icon color="#5139ea"> mdi-plus </v-icon>
+                    <v-btn x-small color="#5139ea" fab elevation="0">
+                      <v-icon color="white"> mdi-plus </v-icon>
+                    </v-btn>
                   </template>
                 </v-expansion-panel-header>
                 <v-expansion-panel-content>
@@ -289,7 +297,9 @@
                 <v-expansion-panel-header disable-icon-rotate>
                   Peut-on rejouer un de vos scénarios ?
                   <template v-slot:actions>
-                    <v-icon color="#5139ea"> mdi-plus </v-icon>
+                    <v-btn x-small color="#5139ea" fab elevation="0">
+                      <v-icon color="white"> mdi-plus </v-icon>
+                    </v-btn>
                   </template>
                 </v-expansion-panel-header>
                 <v-expansion-panel-content>
@@ -303,7 +313,9 @@
                 <v-expansion-panel-header disable-icon-rotate>
                   Dans quelle ville puis-je jouer à Explor’Area ?
                   <template v-slot:actions>
-                    <v-icon color="#5139ea"> mdi-plus </v-icon>
+                    <v-btn x-small color="#5139ea" fab elevation="0">
+                      <v-icon color="white"> mdi-plus </v-icon>
+                    </v-btn>
                   </template>
                 </v-expansion-panel-header>
                 <v-expansion-panel-content>
